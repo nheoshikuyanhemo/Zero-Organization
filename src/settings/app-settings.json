@@ -1,0 +1,13 @@
+{
+  "name": "ZORG",
+  "shortName": "ZORG",
+  "subtitle": "Zero Organization",
+  "description": "ZORG is a daily check-in and streak app where users earn Zpoints. Check in daily, build streaks, and stack your Zpoints before the token launch.",
+  "shortDescription": "Daily check-ins. Streaks. Zpoints. 1B ZORG tokens incoming.",
+  "primaryCategory": "social",
+  "tags": ["points", "streaks", "checkin", "rewards", "crypto"],
+  "splashBackgroundColor": "#000000",
+  "tagline": "Zero Org. Maximum Points.",
+  "requiredChains": ["eip155:8453", "eip155:1"],
+  "shareButtonTitle": "Stack Zpoints"
+}

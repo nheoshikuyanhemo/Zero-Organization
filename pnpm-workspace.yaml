@@ -1,0 +1,13 @@
+# Defines this directory (and any copy of it created during a customer
+# deployment at packages/service.miniapp-generator/gen/app/) as a
+# self-contained pnpm workspace root. Without this marker, pnpm walks up
+# from the install directory at runtime, finds the parent neynar/api
+# monorepo's pnpm-workspace.yaml, and treats the customer miniapp as part
+# of that workspace — causing every customer build to install every
+# workspace member's dependencies (app.chatbot, app.dev-neynar-com, ...)
+# and exhausting the pod's ephemeral storage.
+#
+# The parent workspace already excludes this directory at monorepo build
+# time, so this file is a no-op in the monorepo and only takes effect when
+# the template is copied to gen/app/ at customer-deploy time.
+packages: []
